@@ -4,7 +4,7 @@ charModeWordBeginStopIndex
 	str := editor string.
 	index := str
 		findAnySubstring: self nonAlphanums
-		startingAt: editor pointIndex.
+		startingAt: self pointIndex.
 	index = 0
 		ifTrue: [ index := editor pointIndex ].
 	Transcript

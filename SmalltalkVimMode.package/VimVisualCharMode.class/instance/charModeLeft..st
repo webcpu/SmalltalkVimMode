@@ -2,7 +2,7 @@ commands
 charModeLeft: aKeyboardEvent
  "h"
  | start end from to |
- Transcript show: ('mark: ', markIndex asString, ', length = ', (editor selection size asString)); cr.
+ Transcript show: 'mark: ', markIndex asString, ', length = ', editor selection size asString; cr.
  "start := markIndex."
  "markIndex = ((self stopIndex) - 1)
   ifTrue: [self selectAt: markIndex. ^ true]."
@@ -23,5 +23,5 @@ charModeLeft: aKeyboardEvent
 	editor selectFrom: from to: to. 
 	markStartIndex := from.
 	markStopIndex := to.
- Transcript show: 'from: ', from asString, ',', 'to: ', to asString, ' mark: ', markIndex asString, ', length = ', self selection size asString; cr.
+ Transcript show: 'from: ', from asString, ',', 'to: ', to asString, ' mark: ', markIndex asString, ', length = ', editor selection size asString; cr.
 	^ self

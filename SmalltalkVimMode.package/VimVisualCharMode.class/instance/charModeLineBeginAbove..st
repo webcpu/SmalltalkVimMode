@@ -2,9 +2,9 @@ commands
 charModeLineBeginAbove: aKeyboardEvent
 	| begin end | 
 	(editor startIndex) = 1
-	 ifTrue: [ ^ self ].
+	 ifTrue: [ ^ true ].
  begin := self charModeLineBeginStartIndex.
-	end   := markIndex.
+	end   := self markIndex.
 	Transcript show: begin asString, ':', end asString; cr.
 	editor selectFrom: begin to: end.
 	^ self

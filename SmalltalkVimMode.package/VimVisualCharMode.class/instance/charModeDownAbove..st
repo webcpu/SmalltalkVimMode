@@ -2,7 +2,7 @@ commands
 charModeDownAbove: aKeyboardEvent
  "j"
 	| start end |
-	start := self charModeDownAboveStartIndex.
-	end   := markIndex.
+	start := markIndex.
+	end   := self markDownAboveStopIndex.
 	editor selectFrom: start to: end.
-	^ self
+	^ true

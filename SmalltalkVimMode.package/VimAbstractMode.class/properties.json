@@ -2,15 +2,16 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "SmalltalkVimMode",
-	"classinstvars" : [
-		"normalMode"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"editor",
 		"keymap",
-		"keys"
+		"keys",
+		"markIndex",
+		"markStartIndex",
+		"markStopIndex"
 	],
 	"name" : "VimAbstractMode",
 	"type" : "normal"

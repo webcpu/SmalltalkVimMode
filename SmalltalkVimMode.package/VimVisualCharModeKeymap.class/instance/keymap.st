@@ -42,7 +42,6 @@ keymap
 	  ($u -> #undo).
 	  ((Character value: 18) -> #redoChanges). 
 	
-	  (Character escape -> #enableVimNormalMode). 
 	 	 }.
 	assocs do: [ :assoc |
 		   cmdMap at: assoc key put: assoc value ].

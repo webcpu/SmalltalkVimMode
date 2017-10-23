@@ -1,6 +1,6 @@
 as yet unclassified
 handleInput: aKeyboardEvent for: anEditor
  editor := anEditor.
- Transcript show: (aKeyboardEvent keyCharacter asString); cr.
- 
+ aKeyboardEvent commandKeyPressed & aKeyboardEvent keyCharacter = $a
+  ifTrue: [ editor selectAll: aKeyboardEvent ].
  ^ self

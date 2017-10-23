@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"markIndex",
-		"markStartIndex",
-		"markStopIndex"
-	],
+	"instvars" : [ ],
 	"name" : "VimVisualCharMode",
 	"type" : "normal"
 }
