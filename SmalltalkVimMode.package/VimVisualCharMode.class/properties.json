@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "VimAbstractMode",
+	"category" : "SmalltalkVimMode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"markIndex",
+		"markStartIndex",
+		"markStopIndex"
+	],
+	"name" : "VimVisualCharMode",
+	"type" : "normal"
+}

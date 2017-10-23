@@ -1,0 +1,3 @@
+accessing
+visualCharMode
+  ^ VimVisualCharMode new

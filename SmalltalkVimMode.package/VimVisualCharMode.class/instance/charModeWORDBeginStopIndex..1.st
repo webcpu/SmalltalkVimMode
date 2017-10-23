@@ -1,0 +1,17 @@
+commands
+charModeWORDBeginStopIndex
+	| index str |
+	str := editor string.
+	index := str
+		findAnySubstring: self separators
+		startingAt: editor pointIndex.
+	index = 0
+		ifTrue: [ index := editor pointIndex ].
+	Transcript
+		show: index asString;
+		cr.
+	index := str findAnySubstring: self nonSeparators startingAt: index.
+	index = 0
+		ifTrue: [ index := editor string size + 1 ]
+		ifFalse: [ index := index - 1 ].
+	^ index

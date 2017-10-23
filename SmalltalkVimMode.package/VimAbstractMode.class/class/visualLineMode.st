@@ -1,0 +1,3 @@
+accessing
+visualLineMode
+  ^ VimVisualLineMode new

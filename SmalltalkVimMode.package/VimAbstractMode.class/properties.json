@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmalltalkVimMode",
+	"classinstvars" : [
+		"normalMode"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"editor",
+		"keymap",
+		"keys"
+	],
+	"name" : "VimAbstractMode",
+	"type" : "normal"
+}

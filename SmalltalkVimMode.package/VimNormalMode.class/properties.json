@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VimAbstractMode",
+	"category" : "SmalltalkVimMode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VimNormalMode",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+commands
+separators
+ ^ Character separators
