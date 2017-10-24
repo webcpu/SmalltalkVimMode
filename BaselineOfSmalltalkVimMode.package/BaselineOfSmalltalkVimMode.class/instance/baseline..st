@@ -4,4 +4,5 @@ baseline: spec
 
   spec for: #common do: [
     spec baseline: 'SmalltalkVimMode' with: [
-      spec repository: 'github://unchartedworks/SmalltalkVimMode:master' ]].
+      spec repository: 'github://unchartedworks/SmalltalkVimMode:master' ].
+      spec import: 'Sample'. ].
