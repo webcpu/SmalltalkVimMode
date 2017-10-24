@@ -39,7 +39,7 @@ keymap
 	  ($p -> #pasteText:). 
 
  "Undo/Redo operation"
-	  ($u -> #undo).
+	  ($u -> #undo:).
 	  ((Character value: 18) -> #redoChanges). 
 	
 	 	 }.

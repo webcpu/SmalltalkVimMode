@@ -1,3 +1,15 @@
-as yet unclassified
+vim-mode
 selectWholeLine
-	editor selectInterval: (editor encompassParagraph: editor selectionInterval)
+ | begin end str | 
+ str := editor string.
+ begin := self lastEndOfLineIndex: editor pointIndex.
+ end := self endOfLineIndex: editor pointIndex.
+ begin = 1 | end = 1
+  ifTrue: [ editor selectAt: 1. ^ true ] .
+ (end - begin) = 1 & end = (editor string size + 1) 
+  ifTrue: [ editor selectAt: end. ^ true ].
+ begin = 1 
+  ifFalse: [ begin := begin + 1].
+ end := end - 1.
+ editor selectFrom: begin to: end.
+ ^ true

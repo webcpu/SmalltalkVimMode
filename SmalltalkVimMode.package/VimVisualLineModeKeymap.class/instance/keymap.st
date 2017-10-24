@@ -10,24 +10,10 @@ keymap
 	  ($l -> #noop:).
 	  ($j -> #lineModeMarkDown:).
 	  ($k -> #lineModeMarkUp:).
-	  ($0 -> #cursorLineBegin:).
-	  ($$ -> #cursorLineEnd:). 
-	  ($w -> #cursorWordBegin:).
-	  ($W -> #cursorWORDBegin:).
-	  ($e -> #cursorWordEnd:).
-	  ($E -> #cursorWORDEnd:).
-	  ($b -> #cursorBackwardWordBegin:).
-	  ($B -> #cursorBackwardWORDBegin:).
 	  ($g -> #lineModeMarkBufferBegin:).
 	  ($G -> #lineModeMarkBufferEnd:).  
 
- "Insert text"
-	  ($i -> #insertBeforeCursor:).
-	  ($a -> #insertAfterCursor:).
-	  ($A -> #insertAtEndOfLine:).
-	  ($o -> #appendNewLine:).
-	  ($O -> #insertNewLine:).
-	
+
 	"Delete text" 
 	  ($x -> #forwardDelete:).
 	  ($d -> #deleteLine:). 
@@ -39,7 +25,7 @@ keymap
 	  ($p -> #pasteText:). 
 
  "Undo/Redo operation"
-	  ($u -> #undo).
+	  ($u -> #undo:).
 	  ((Character value: 18) -> #redoChanges). 
 	 	 }.
 	assocs do: [ :assoc |

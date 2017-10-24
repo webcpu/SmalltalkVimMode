@@ -1,7 +1,8 @@
 vim-visual-line-mode
 lineModeMarkDownBelow: aKeyboardEvent
  "j"
- | begin end index|
+ | begin end index| 
+ Transcript show: 'lineModeMarkDownBelow: ' ,(editor startIndex asString) , ':', (editor stopIndex asString); cr.
  begin := editor startIndex.
  editor stopIndex = (editor string size + 1) 
   ifTrue: [ ^ self ]. 
