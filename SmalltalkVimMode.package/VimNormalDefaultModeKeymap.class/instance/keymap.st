@@ -17,7 +17,8 @@ keymap
 		 ($b -> #cursorBackwardWordBegin:).
 	  ($B -> #cursorBackwardWORDBegin:).
 		 ($0 -> #cursorLineBegin:).
-	  ($$ -> #cursorLineEnd:).
+	  ($$ -> #cursorLineEnd:). 
+		 ($^ -> #cursorLineBeginNoneEmpty:).
 	  ($g -> #cursorBufferBegin:).
 	  ($G -> #cursorBufferEnd:).  
 	  (Character arrowLeft -> #cursorLeft:).
@@ -39,6 +40,7 @@ keymap
 	  ($r -> #replaceCharacter:).  
 
 	"Copy/Paste text"
+	  	($Y -> #copyLine:).
 	  ($p -> #pasteText:). 
 
  "Undo/Redo operation"
