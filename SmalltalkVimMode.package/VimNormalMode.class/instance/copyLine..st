@@ -1,4 +1,4 @@
-copying
+copy-mode
 copyLine: aKeyboardEvent
  "yy"
  |start end position |.
