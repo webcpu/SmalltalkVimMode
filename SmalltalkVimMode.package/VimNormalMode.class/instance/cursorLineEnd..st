@@ -2,5 +2,4 @@ commands
 cursorLineEnd: aKeyboardEvent
 	"$"
 	editor cursorEnd: aKeyboardEvent.
-	editor selectAt: editor stopIndex.
-	^ self
+	editor selectAt: editor stopIndex

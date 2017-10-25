@@ -1,8 +1,7 @@
 commands
 deleteLine: aKeyboardEvent
  "dd"
- |start end position vimNormalModeKeys |. 
-			vimNormalModeKeys := ''.
+ |start end position |. 
 			position := editor pointIndex.
 			editor cursorHome: aKeyboardEvent.
 			start := editor pointIndex.
@@ -14,7 +13,6 @@ deleteLine: aKeyboardEvent
      ifTrue: [ editor backspace: aKeyboardEvent. editor clipboardTextPut: String cr. ^ true ].
  			start = end 
      ifTrue:  [ editor clipboardTextPut: '' ]
-     ifFalse: [ editor clipboardTextPut: (String cr , editor clipboardText)].
+     ifFalse: [ editor clipboardTextPut: (String cr , editor clipboardText) ].
 			Transcript show: (editor clipboardText asArray asString); show: start asString , ':', end asString, '-', editor string size asString; cr.
-	keys := ''.
 	^ self normalMode

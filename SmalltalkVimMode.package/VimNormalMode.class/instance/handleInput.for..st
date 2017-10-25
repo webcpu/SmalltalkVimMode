@@ -5,6 +5,7 @@ handleInput: aKeyboardEvent for: anEditor
 	key := Character value: aKeyboardEvent keyValue.
 	newKeymap := (self updateKeymap: aKeyboardEvent).
 	
+	Transcript show: newKeymap asString; cr.
 	(keymap isKindOf: VimNormalDefaultModeKeymap) & ((newKeymap isKindOf: VimNormalDefaultModeKeymap) not)
 	 ifTrue: [keymap := newKeymap. ^ self ].
 	keymap := newKeymap.

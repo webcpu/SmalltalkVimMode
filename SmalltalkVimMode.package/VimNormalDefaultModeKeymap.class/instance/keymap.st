@@ -39,7 +39,6 @@ keymap
 	  ($r -> #replaceCharacter:).  
 
 	"Copy/Paste text"
-   ($y -> #copyLine:).
 	  ($p -> #pasteText:). 
 
  "Undo/Redo operation"

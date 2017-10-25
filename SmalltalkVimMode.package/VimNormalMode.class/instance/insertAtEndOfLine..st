@@ -1,4 +1,4 @@
 commands
 insertAtEndOfLine: aKeyboardEvent 
-	editor cursorLineEnd: aKeyboardEvent.
+	self cursorLineEnd: aKeyboardEvent.
 	^ self insertMode

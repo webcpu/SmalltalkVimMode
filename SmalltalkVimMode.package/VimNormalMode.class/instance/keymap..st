@@ -6,6 +6,7 @@ keymap: aKeyboardEvent
 	  ($d -> VimNormalDeleteModeKeymap new).
 	  ($r -> VimNormalReplaceCharacterKeymap new).
 	  ($R -> VimNormalReplaceStringModeKeymap new). 
+	  ($y -> VimNormalCopyModeKeymap new). 
 	 	 }.
 	assocs do: [ :assoc |
 		   cmdMap at: assoc key put: assoc value ].
