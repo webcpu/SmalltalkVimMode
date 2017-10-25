@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteBufferBegin_: aKeyboardEvent
 | start end | 
  start := 1.

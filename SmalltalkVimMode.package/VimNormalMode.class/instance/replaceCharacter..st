@@ -1,4 +1,4 @@
-commands
+replace-character-mode
 replaceCharacter: aKeyboardEvent
  "r"
  | str position |.

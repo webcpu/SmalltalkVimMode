@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorWordBegin: aKeyboardEvent
 	| str index |
 	str   := editor string.

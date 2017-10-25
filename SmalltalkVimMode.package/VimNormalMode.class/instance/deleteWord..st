@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteWord: aKeyboardEvent
 	| start end |
 	start := editor pointIndex.

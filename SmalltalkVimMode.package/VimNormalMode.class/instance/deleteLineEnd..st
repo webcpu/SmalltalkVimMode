@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteLineEnd: aKeyboardEvent
 	| start end |
 	start := editor pointIndex.

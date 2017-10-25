@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorWORDEnd: aKeyboardEvent
 	| string index initialIsAlphaNumeric |
 	index := editor pointIndex.

@@ -1,4 +1,4 @@
-commands
+default-mode
 pasteText: aKeyboardEvent
 	| text |
 	text := editor clipboardText.

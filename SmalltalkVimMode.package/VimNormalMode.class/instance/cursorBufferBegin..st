@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorBufferBegin: aKeyboardEvent
 	"gg"
 

@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteBufferEnd: aKeyboardEvent
 	| start end |
 	start := editor string lastIndexOf: (Character cr) startingAt: (editor pointIndex) ifAbsent: [ 1 ].

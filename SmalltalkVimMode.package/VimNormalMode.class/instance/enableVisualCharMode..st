@@ -1,4 +1,4 @@
-commands
+default-mode
 enableVisualCharMode: aKeyboarEvent
  | mode index |
  mode := self class visualCharMode: editor.

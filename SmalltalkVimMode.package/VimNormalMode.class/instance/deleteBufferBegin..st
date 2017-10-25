@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteBufferBegin: aKeyboardEvent
 	keys = ''
 		ifTrue: [ keys := 'g'. ^ self ].

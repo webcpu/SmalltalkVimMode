@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorLineBeginNoneEmpty: aKeyboardEvent 
  self cursorLineBegin: aKeyboardEvent.
  self cursorWORDBegin: aKeyboardEvent.

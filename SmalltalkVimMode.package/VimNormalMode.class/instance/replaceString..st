@@ -1,4 +1,4 @@
-initialize-release
+replace-string-mode
 replaceString: aKeyboardEvent
  "r"
  | str position |.

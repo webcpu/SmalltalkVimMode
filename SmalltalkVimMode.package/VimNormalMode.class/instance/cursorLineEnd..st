@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorLineEnd: aKeyboardEvent
 	"$"
 	editor cursorEnd: aKeyboardEvent.

@@ -1,4 +1,4 @@
-commands
+delete-mode
 deleteLine: aKeyboardEvent
  "dd"
  |start end position |. 

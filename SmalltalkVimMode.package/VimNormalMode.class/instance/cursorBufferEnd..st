@@ -1,4 +1,4 @@
-commands
+default-mode
 cursorBufferEnd: aKeyboardEvent
 	"G"
 	aKeyboardEvent shiftPressed

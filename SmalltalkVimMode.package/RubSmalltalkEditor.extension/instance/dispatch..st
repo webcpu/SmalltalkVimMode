@@ -5,7 +5,6 @@ dispatch: aKeyboardEvent
 
 	| return |
 	return := [ :val | ^ val ].
-	"(self dispatchVimOn: aKeyboardEvent  return: return) ifTrue: [^ true]."
 	(self vim: aKeyboardEvent  return: return) ifTrue: [^ true].
 	self dispatchEnterOn: aKeyboardEvent return: return.
 	self dispatchCommandOn: aKeyboardEvent return: return.

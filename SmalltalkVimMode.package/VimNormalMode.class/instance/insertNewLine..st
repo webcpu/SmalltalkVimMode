@@ -1,4 +1,4 @@
-commands
+default-mode
 insertNewLine: aKeyboardEvent
  "O"
  |start|.

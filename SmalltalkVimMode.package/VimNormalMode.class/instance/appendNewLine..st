@@ -1,4 +1,4 @@
-commands
+default-mode
 appendNewLine: aKeyboardEvent
  "o"
  | end |.

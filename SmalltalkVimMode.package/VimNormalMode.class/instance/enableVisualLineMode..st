@@ -1,4 +1,4 @@
-commands
+default-mode
 enableVisualLineMode: aKeyboarEvent
  | mode |
  mode := self class visualLineMode: editor.
