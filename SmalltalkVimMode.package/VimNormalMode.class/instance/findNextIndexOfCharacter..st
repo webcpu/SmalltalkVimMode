@@ -1,5 +1,5 @@
 find-mode
-findIndexOfCharacter: aKeyboardEvent
+findNextIndexOfCharacter: aKeyboardEvent
 	| c pointIndex begin | 
  pointIndex := editor pointIndex. 
 

@@ -1,7 +1,7 @@
 find-mode
-findBeforeCharacter: aKeyboardEvent 
+findPreviousCharacter: aKeyboardEvent 
  | index |
-	index := self findBeforeIndexOfCharacter: aKeyboardEvent.
+	index := self findPreviousIndexOfCharacter: aKeyboardEvent.
  index = editor pointIndex
   ifFalse: [ editor selectAt: index ].
  ^ self normalMode

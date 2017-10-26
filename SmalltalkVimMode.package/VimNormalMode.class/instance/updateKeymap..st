@@ -10,8 +10,10 @@ updateKeymap: aKeyboardEvent
 	  ($R -> VimNormalReplaceStringModeKeymap new). 
  	  ($y -> VimNormalCopyModeKeymap new).
 		 ($g -> VimNormalGotoModeKeymap new). 
-		 ($f -> VimNormalFindNextModeKeymap new).
-		 ($t -> VimNormalFindBeforeModeKeymap new).
+		 ($f -> VimNormalFindNextModeKeymap new).	
+		 ($t -> VimNormalFindBeforeNextModeKeymap new).
+			($F -> VimNormalFindPreviousModeKeymap new).
+			($T -> VimNormalFindAfterPreviousModeKeymap new).
 	 	 }.
 	assocs do: [ :assoc |
 		   cmdMap at: assoc key put: assoc value ].

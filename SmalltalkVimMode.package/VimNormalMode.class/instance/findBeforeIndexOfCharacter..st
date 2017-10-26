@@ -1,7 +1,7 @@
 find-mode
-findIndexOfBeforeCharacter: aKeyboardEvent
+findBeforeIndexOfCharacter: aKeyboardEvent
 	| pointIndex index |
-	index := self findIndexOfCharacter: aKeyboardEvent. 
+	index := self findNextIndexOfCharacter: aKeyboardEvent. 
  pointIndex := editor pointIndex. 
 
  index = 1
