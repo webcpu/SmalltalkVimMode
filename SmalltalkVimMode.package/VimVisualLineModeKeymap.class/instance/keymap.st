@@ -15,8 +15,8 @@ keymap
 
 
 	"Delete text" 
-	  ($x -> #forwardDelete:).
-	  ($d -> #deleteLine:). 
+	  ($x -> #cut:).
+	  ($d -> #cut:). 
 	"Simple replace text" 
 	  ($r -> #replaceCharacter:).  
 

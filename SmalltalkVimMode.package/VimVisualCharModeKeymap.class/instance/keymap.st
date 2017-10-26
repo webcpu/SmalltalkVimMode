@@ -29,8 +29,8 @@ keymap
 	  ($O -> #insertNewLine:).
 	
 	"Delete text" 
-	  ($x -> #cut).
-	  ($d -> #cut). 
+	  ($x -> #cut:).
+	  ($d -> #cut:). 
 	"Simple replace text" 
 	  ($r -> #replaceCharacter:).  
 
