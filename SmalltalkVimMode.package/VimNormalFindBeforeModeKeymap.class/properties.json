@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "VimNormalFindModeKeymap",
+	"name" : "VimNormalFindBeforeModeKeymap",
 	"type" : "normal"
 }

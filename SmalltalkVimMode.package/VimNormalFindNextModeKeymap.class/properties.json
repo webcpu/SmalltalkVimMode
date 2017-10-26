@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VimKeymap",
+	"category" : "SmalltalkVimMode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VimNormalFindNextModeKeymap",
+	"type" : "normal"
+}
