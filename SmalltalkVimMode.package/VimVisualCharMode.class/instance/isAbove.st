@@ -1,3 +1,3 @@
 commands
 isAbove
- ^ (editor stopIndex) <= (markIndex + 1)
+ ^ (editor startIndex) < markIndex
