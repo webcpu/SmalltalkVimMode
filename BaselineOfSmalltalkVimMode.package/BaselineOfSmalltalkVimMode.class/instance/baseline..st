@@ -2,8 +2,8 @@ baselines
 baseline: spec
   <baseline>
 
- | repository |
- repository := 'github://unchartedworks/SmalltalkVimMode:master'.
-  spec for: #common do: [
-    spec baseline: 'SmalltalkVimMode' with: [ spec repository: repository ].
- ].
+ spec
+  for: #'pharo6.x'
+  do: [ 
+	  spec package: 'SmalltalkVimMode'.
+   spec group: 'default' with: #('SmalltalkVimMode') ]
