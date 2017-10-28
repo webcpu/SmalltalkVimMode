@@ -1,5 +1,7 @@
 default-mode
 cursorLineEnd: aKeyboardEvent
 	"$"
-	editor cursorEnd: aKeyboardEvent.
-	editor selectAt: editor stopIndex
+	| index |
+	index := self indexOfEndOfCurrentLine.
+	editor selectAt: index.
+	^ self normalMode
