@@ -1,5 +1,9 @@
 # Install SmalltalkVimMode
+## Prerequisites
+- Latest Pharo 6.1+ image.
+- Pharo VM for Pharo 6.1+.
 
+## Execute the code in a Playground in Pharo
 ```
 baseline   := 'SmalltalkVimMode'.
 repository := 'github://unchartedworks/SmalltalkVimMode:master'. 
