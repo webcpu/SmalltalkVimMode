@@ -19,7 +19,6 @@ actions do: apply.
 
 `V` enter visual mode per line
 
-
 ## Normal mode
 ### Navigation keys
 `h` left
@@ -36,6 +35,8 @@ actions do: apply.
 
 `^` moves the cursor to the first non-empty character of the line
 
+`g_` moves the cursor to the last non-empty character of the line
+
 `w` move forward one word (next alphanumeric word)
 
 `W` move forward one word (delimited by a white space)
@@ -48,9 +49,9 @@ actions do: apply.
 
 `B` move backward one word (delimited by a white space)
 
-`G` move to the end of the file
+`gg` move to the beginning of the file
 
-`gg` move to the beginning of the file.
+`G` move to the end of the file
 
 `fx` move to next occurrence of character x
 
@@ -99,7 +100,7 @@ actions do: apply.
 ### Undo/Redo operation
 `u` undo the last operation
 
-`Ctrl+r`redo the last undo
+`Ctrl + r`redo the last undo
 
 ### Comment/Uncomment
 `Command + /` comment/uncomment selected code, if there is no seletion, the current line will be commented/uncommented.
