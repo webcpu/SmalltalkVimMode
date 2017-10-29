@@ -1,5 +1,7 @@
 default-mode
-cursorLineBeginNoneEmpty: aKeyboardEvent 
- self cursorLineBegin: aKeyboardEvent.
- self cursorWORDBegin: aKeyboardEvent.
- ^ self normalMode
+cursorLineBeginNoneEmpty: aKeyboardEvent   
+ ^ (self isBlankLine)
+    ifTrue: [ self cursorLineBeginNoneEmptyInBlankLine: aKeyboardEvent ]
+    ifFalse: [ self cursorLineBeginNoneEmptyInNonBlankLine: aKeyboardEvent ]
+
+  
