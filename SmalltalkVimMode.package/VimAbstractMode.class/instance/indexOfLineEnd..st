@@ -1,3 +1,3 @@
 commands
-endOfLineIndex: characterIndex
+indexOfLineEnd: characterIndex
 	^ editor string indexOf: (Character cr) startingAt: characterIndex ifAbsent: (editor string size) + 1.

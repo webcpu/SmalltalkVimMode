@@ -7,6 +7,6 @@ lineModeMarkDownBelow: aKeyboardEvent
  editor stopIndex = (editor string size + 1) 
   ifTrue: [ ^ self ]. 
 
- end := self endOfLineIndex: (editor stopIndex + 1).
+ end := self indexOfLineEnd: (editor stopIndex + 1).
 	editor selectFrom: begin to: end - 1.
 	^ self

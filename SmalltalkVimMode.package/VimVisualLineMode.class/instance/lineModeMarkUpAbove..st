@@ -8,6 +8,6 @@ lineModeMarkUpAbove: aKeyboardEvent
  editor startIndex = 1 
   ifTrue: [ ^ self ]. 
 
- begin := self lastEndOfLineIndex: (editor startIndex - 1).
+ begin := self indexOfLastLineEnd: (editor startIndex - 1).
 	editor selectFrom: begin + 1 to: end - 1.
 	^ self

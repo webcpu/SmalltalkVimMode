@@ -5,6 +5,6 @@ lineModeMarkUpBelow: aKeyboardEvent
  Transcript show: 'mark: ', markIndex asString, ', length = ', editor selection size asString; cr. 
 
  begin := editor startIndex.
- end := self lastEndOfLineIndex: (editor stopIndex - 1).
+ end := self indexOfLastLineEnd: (editor stopIndex - 1).
 	editor selectFrom: begin to: end - 1.
 	^ self

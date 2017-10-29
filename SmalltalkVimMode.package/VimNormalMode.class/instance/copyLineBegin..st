@@ -1,7 +1,7 @@
 copy-mode
 copyLineBegin: aKeyboardEvent  
  | begin end |
- begin := self lastEndOfLineIndex: self pointIndex.
+ begin := self indexOfLastLineEnd: self pointIndex.
  end := editor pointIndex.
  editor selectFrom: begin to: end.
  editor copySelection.

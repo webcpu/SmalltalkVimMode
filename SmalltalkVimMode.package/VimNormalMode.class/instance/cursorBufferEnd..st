@@ -1,6 +1,7 @@
 default-mode
 cursorBufferEnd: aKeyboardEvent
 	"G"
-	aKeyboardEvent shiftPressed
-		ifTrue: [ editor selectAt: (editor string size) + 1 ].
+	| index selectBufferEnd |
+	selectBufferEnd := [ index := (editor string size) + 1. editor selectAt: index ].
+	aKeyboardEvent shiftPressed ifTrue: selectBufferEnd.
 	^ self normalMode
