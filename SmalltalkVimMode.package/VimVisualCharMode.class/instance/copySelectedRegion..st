@@ -1,4 +1,4 @@
-copying
+commands
 copySelectedRegion: aKeyboardEvent
  editor copySelection.
  editor selectAt: markStartIndex.

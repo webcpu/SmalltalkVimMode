@@ -21,7 +21,7 @@ keymap
 	  ($r -> #replaceCharacter:).  
 
 	"Copy/Paste text"
-   ($y -> #copySelectedRegion:).
+   ($y -> #copySelectedLines:).
 	  ($p -> #pasteText:). 
 
    ($/ -> #comment:).
