@@ -45,7 +45,7 @@ keymap
 
  "Undo/Redo operation"
 	  ($u -> #undo).
-	  ((Character value: 18) -> #redoChanges). "$r" 
+	  ((Character value: 18) -> #redoChanges:). "ctrl + $r" 
 
 	  "($v -> #enableVisualCharMode:)." "$v"
 	  ($V -> #enableVisualLineMode:). "$V"

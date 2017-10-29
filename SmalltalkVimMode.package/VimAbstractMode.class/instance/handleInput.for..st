@@ -1,4 +1,4 @@
-accessing
+event
 handleInput: aKeyboardEvent for: anEditor
 	| key action newMode |
 	editor := anEditor. 

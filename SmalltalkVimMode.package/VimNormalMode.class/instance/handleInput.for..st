@@ -1,4 +1,4 @@
-accessing
+event
 handleInput: aKeyboardEvent for: anEditor
 	| key action newMode newKeymap performAction |
 	editor := anEditor. 
@@ -16,7 +16,7 @@ handleInput: aKeyboardEvent for: anEditor
 	keymap := newKeymap.
 	
 	action := (keymap keymap) at: key ifAbsent: [ #noop: ].
-	"Transcript << action; cr."
+"	Transcript << key asciiValue; cr."
 	
 	action == #noop:
 		ifTrue: [ keys := ''. ].
@@ -26,4 +26,4 @@ handleInput: aKeyboardEvent for: anEditor
 		ifFalse: [ self perform: action] . ].
 	times = '' ifTrue: [ times := '1'. performAction value. ^ newMode].
 	(1 to: (times asInteger )) do: [:x | performAction value].
- ^ newMode
+ ^ newMode 
