@@ -24,6 +24,8 @@ keymap
    ($y -> #copySelectedRegion:).
 	  ($p -> #pasteText:). 
 
+   ($/ -> #comment:).
+
  "Undo/Redo operation"
 	  ($u -> #undo:).
 	  ((Character value: 18) -> #redoChanges). 

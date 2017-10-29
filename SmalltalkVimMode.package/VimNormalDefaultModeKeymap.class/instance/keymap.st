@@ -53,6 +53,7 @@ keymap
 
    ($* -> #emphasisWordUnderCursor:). 
 
+   ($/ -> #comment:).
 	
 	 	 }.
 	assocs do: [ :assoc |
