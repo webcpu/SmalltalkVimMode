@@ -101,4 +101,5 @@ actions do: apply.
 
 `Ctrl+r`redo the last undo
 
-
+### Comment/Uncomment
+`Command + /` comment/uncomment selected code, if there is no seletion, the current line will be commented/uncommented.
