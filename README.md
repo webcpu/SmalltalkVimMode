@@ -30,59 +30,91 @@ actions do: apply.
 ### Navigation keys
 `h` left
 
+N `h` left N times
+
 `j` down
+
+N `j` down N times
 
 `k` up
 
+N `k` up N times
+
 `l` right
 
-`0` moves the cursor to the beginning of the line
+N `l` right N times
 
-`$` moves the cursor to the end of the line
+`0` move the cursor to the first character in the line
 
-`^` moves the cursor to the first non-empty character of the line
+`$` move the cursor to the last character in the line
 
-`g_` moves the cursor to the last non-empty character of the line
+`^`	move the cursor to the first non-blank character in the line
+
+`g_` move the cursor to the last non-blank character in the line
 
 `w` move forward to the start of the next word (next alphanumeric word)
 
+N `w` move forward to the start of the next N words (next N alphanumeric words)
+
 `W` move forward to the start of the next word (delimited by a white space)
+
+N `W` move forward to the start of the next N words (delimited by a white space)
 
 `e` move forward to the end of the next word (next alphanumeric word)
 
+N `e` move forward to the end of the next N words (next N alphanumeric words)
+
 `E` move forward to the end of the next word (delimited by a white space)
+
+N `E` move forward to the end of the next N words (delimited by a white space)
 
 `b` move backward to the start of previous word (previous alphanumeric word)
 
+N `b` move backward to the start of previous N words (previous N alphanumeric words)
+
 `B` move backward to teh start of previous word (delimited by a white space)
+
+N `B` move backward to teh start of previous N words (delimited by a white space)
 
 `gg` move to the beginning of the buffer
 
 `G` move to the end of the buffer
 
-`fx` move forward to the next occurrence of character x
+`fx` move forward to the next occurrence of character x to the right
 
-`tx` move forward to before the next occurrence of character x
+N `fx` move forward to the Nth occurrence of character x to the right
 
-`Fx` move forward to the previous occurrence of character x
+`tx` move forward to before the next occurrence of character x to the rigtht
 
-`Tx` move forward to after the previous occurrence of character x
+N `tx` move forward to before the Nth occurrence of character x to the right
+
+`Fx` move forward to the Nth occurrence of character x to the left
+
+N `Fx` move forward to the Nth occurrence of character x to the left
+
+`Tx` move forward to after the previous occurrence of character x to the left
+
+N `Tx` move forward to after the Nth occurrence of character x to the left
 
 ### Insert text
-`a` Insert text after the cursor
+`a` insert text after the cursor
 
-`A` Insert text at the end of the line
+`A` insert text at the end of the line
 
-`i` Insert text before the cursor
+`i` insert text before the cursor
 
-`o` Begin a new line below the cursor
+`o` begin a new line below the cursor
 
-`O` Begin a new line above the cursor
+`O` begin a new line above the cursor
 
 ### Delete text
-`x`delete character at cursor
+`x` delete character at the cursor
+
+N `x` delete N characters from the cursor
 
 `dw` delete a word.
+
+N `dw` delete N words.
 
 `d0` delete to the beginning of a line.
 
@@ -94,17 +126,23 @@ actions do: apply.
 
 `dd` delete line
 
-### Simple replace text
-`r` Replace the character under the cursor
+N `dd` delete N lines
 
-`R` Replace characters instead of inserting them
+### Simple replace text
+`r` peplace the character under the cursor
+
+`R` replace characters instead of inserting them
 
 ### Copy/Paste text
 `yy` copy current line into storage buffer
 
 `p` paste storage buffer after current line
 
+N `p` paste N times storage buffer after current line
+
 ### Undo/Redo operation
 `u` undo the last operation
+
+N `u` undo the last N operations
 
 `Ctrl + r`redo the last undo
