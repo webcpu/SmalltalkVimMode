@@ -17,7 +17,7 @@ actions do: apply.
 
 # Shortcuts
 ## Main
-`Esc` exit and enter Normal mode
+`Esc` enter normal mode
 
 `i` enter insert mode
 
