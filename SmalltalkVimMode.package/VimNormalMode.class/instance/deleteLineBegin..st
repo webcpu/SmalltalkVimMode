@@ -8,5 +8,4 @@ deleteLineBegin: aKeyboardEvent
 		ifFalse: [ 
 			editor selectFrom: start to: end - 1.
 			editor cut ].
-	keys := ''.
 	^ self normalMode

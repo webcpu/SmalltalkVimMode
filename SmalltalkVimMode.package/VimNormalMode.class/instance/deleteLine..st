@@ -14,5 +14,4 @@ deleteLine: aKeyboardEvent
  			start = end 
      ifTrue:  [ editor clipboardTextPut: '' ]
      ifFalse: [ editor clipboardTextPut: (String cr , editor clipboardText) ].
-			Transcript show: (editor clipboardText asArray asString); show: start asString , ':', end asString, '-', editor string size asString; cr.
 	^ self normalMode
