@@ -2,7 +2,7 @@ copy-mode
 copyLineEnd: aKeyboardEvent  
  | begin end |
  begin := editor pointIndex.
- end := self indexOfLineEnd: begin.
+ end := self endOfLineIndex: begin.
  begin = end 
   ifTrue: [ editor clipboardTextPut: ''. ^ self normalMode ].
 

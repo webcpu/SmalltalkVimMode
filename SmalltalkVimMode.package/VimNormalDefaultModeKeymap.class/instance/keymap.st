@@ -47,7 +47,7 @@ keymap
 	  ($u -> #undo).
 	  ((Character value: 18) -> #redoChanges). "$r" 
 
-	  ($v -> #enableVisualCharMode:). "$v"
+	  "($v -> #enableVisualCharMode:)." "$v"
 	  ($V -> #enableVisualLineMode:). "$V"
 	  "((Character value: 22) -> #tryVisualBlockMode:)." "ctrl + $v"
 

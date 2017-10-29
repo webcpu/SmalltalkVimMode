@@ -1,5 +1,5 @@
 default-mode
-cursorLineBeginNoneEmpty: aKeyboardEvent   
+cursorLineBeginNoneEmpty: aKeyboardEvent 
  self cursorLineBegin: aKeyboardEvent.
  self cursorWORDBegin: aKeyboardEvent.
  ^ self normalMode

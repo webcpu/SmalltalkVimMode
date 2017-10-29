@@ -2,7 +2,7 @@ vim-mode
 selectWholeLine
  | begin end str | 
  str := editor string.
- begin := self indexOfLastLineEnd: editor pointIndex.
+ begin := self lastEndOfLineIndex: editor pointIndex.
  end := self endOfLineIndex: editor pointIndex.
  begin = 1 | end = 1
   ifTrue: [ editor selectAt: 1. ^ true ] .
