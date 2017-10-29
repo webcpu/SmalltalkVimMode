@@ -145,4 +145,6 @@ N `p` paste N times storage buffer after current line
 
 N `u` undo the last N operations
 
-`Ctrl + r`redo the last undo
+`Ctrl + r`redo the last undo operation
+
+N `Ctrl + r`redo the last N undo operations
