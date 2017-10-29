@@ -1,7 +1,8 @@
 keymap
 updateKeymap: aKeyboardEvent
  | assocs cmdMap |
- (keymap isKindOf: VimNormalDefaultModeKeymap) ifFalse: [^ keymap].
+ (keymap isKindOf: VimNormalDefaultModeKeymap)  
+  ifFalse: [^ keymap ].  
 
 	cmdMap := Dictionary new.
 	assocs := {

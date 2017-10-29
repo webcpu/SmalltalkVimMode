@@ -8,6 +8,7 @@
 	"instvars" : [
 		"editor",
 		"keymap",
+		"times",
 		"keys",
 		"markIndex",
 		"markStartIndex",

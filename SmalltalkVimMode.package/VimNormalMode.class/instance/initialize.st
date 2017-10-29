@@ -1,4 +1,4 @@
 initialization
 initialize
  keymap := VimNormalDefaultModeKeymap new.
- keys := ''.
+ keys := ''.times := ''.

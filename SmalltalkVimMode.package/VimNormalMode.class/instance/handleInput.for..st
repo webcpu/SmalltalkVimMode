@@ -1,10 +1,14 @@
-as yet unclassified
+accessing
 handleInput: aKeyboardEvent for: anEditor
-	| key action newMode newKeymap |
+	| key action newMode newKeymap performAction |
 	editor := anEditor. 
-	key := Character value: aKeyboardEvent keyValue.
+	key := aKeyboardEvent keyCharacter.
+	 
+	(keymap isKindOf: VimNormalDefaultModeKeymap) & (aKeyboardEvent keyCharacter isDigit)
+  ifTrue: [ (key = $0 & times = '') ifFalse: [times := (times , key asString). ^ self] ]. 
+
 	newKeymap := (self updateKeymap: aKeyboardEvent).
-	
+		
 	(keymap isKindOf: VimNormalDefaultModeKeymap) & ((newKeymap isKindOf: VimNormalDefaultModeKeymap) not)
 	 ifTrue: [  
    Transcript << newKeymap asString; cr.
@@ -16,7 +20,10 @@ handleInput: aKeyboardEvent for: anEditor
 	
 	action == #noop:
 		ifTrue: [ keys := ''. ].
-	newMode := action asString endsWithAColon
+	performAction := [  
+	newMode := (action asString endsWithAColon)
 		ifTrue: [ self perform: action with: aKeyboardEvent ]
-		ifFalse: [ self perform: action]. 
+		ifFalse: [ self perform: action] . ].
+	times = '' ifTrue: [ times := '1'. performAction value. ^ newMode].
+	(1 to: (times asInteger )) do: [:x | performAction value].
  ^ newMode
