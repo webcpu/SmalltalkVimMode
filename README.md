@@ -24,6 +24,9 @@ actions do: apply.
 `V` enter visual mode per line
 
 ## Normal mode
+### Comment/Uncomment
+`Command + /` comment/uncomment selected code, if there is no selection, the current line will be commented/uncommented.
+
 ### Navigation keys
 `h` left
 
@@ -41,29 +44,29 @@ actions do: apply.
 
 `g_` moves the cursor to the last non-empty character of the line
 
-`w` move forward one word (next alphanumeric word)
+`w` move forward to the start of the next word (next alphanumeric word)
 
-`W` move forward one word (delimited by a white space)
+`W` move forward to the start of the next word (delimited by a white space)
 
-`e` move forward to the end of a word (next alphanumeric word)
+`e` move forward to the end of the next word (next alphanumeric word)
 
-`E` move forward to the end of a word (delimited by a white space)
+`E` move forward to the end of the next word (delimited by a white space)
 
-`b` move backward one word (previous alphanumeric word)
+`b` move backward to the start of previous word (previous alphanumeric word)
 
-`B` move backward one word (delimited by a white space)
+`B` move backward to teh start of previous word (delimited by a white space)
 
-`gg` move to the beginning of the file
+`gg` move to the beginning of the buffer
 
-`G` move to the end of the file
+`G` move to the end of the buffer
 
-`fx` move to next occurrence of character x
+`fx` move forward to the next occurrence of character x
 
-`tx` move to before next occurrence of character x
+`tx` move forward to before the next occurrence of character x
 
-`Fx` move to previous occurrence of character x
+`Fx` move forward to the previous occurrence of character x
 
-`Tx` move to after previous occurrence of character x
+`Tx` move forward to after the previous occurrence of character x
 
 ### Insert text
 `a` Insert text after the cursor
@@ -105,6 +108,3 @@ actions do: apply.
 `u` undo the last operation
 
 `Ctrl + r`redo the last undo
-
-### Comment/Uncomment
-`Command + /` comment/uncomment selected code, if there is no seletion, the current line will be commented/uncommented.
