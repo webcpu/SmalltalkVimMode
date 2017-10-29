@@ -10,7 +10,7 @@ deleteLine: aKeyboardEvent
 			editor selectFrom: start to: end.
 			editor cut.  
     (start = end) & (end > (editor string size))
-     ifTrue: [ editor backspace: aKeyboardEvent. editor clipboardTextPut: String cr. ^ true ].
+     ifTrue: [ editor backspace: aKeyboardEvent. editor clipboardTextPut: String cr. ^ self normalMode ].
  			start = end 
      ifTrue:  [ editor clipboardTextPut: '' ]
      ifFalse: [ editor clipboardTextPut: (String cr , editor clipboardText) ].
