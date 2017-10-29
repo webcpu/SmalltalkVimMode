@@ -1,15 +1,28 @@
 default-mode
 pasteText: aKeyboardEvent
-	| text |
-	text := editor clipboardText.
-	text isEmpty
-		ifTrue: [ ^ self normalMode ].
-	text = String cr
-	 ifTrue: [ self cursorLineEnd: aKeyboardEvent. editor paste . ^ self normalMode ].
-	text first = Character cr
-		ifTrue: [ self cursorLineEnd: aKeyboardEvent.
-			editor cursorRight: aKeyboardEvent.
-			editor replace: editor selectionInterval with: editor clipboardText allButFirst and: [ editor selectAt: editor pointIndex ].
-			editor cursorUp: aKeyboardEvent ]
-		ifFalse: [ editor paste ].
+	| text pasteLines paste pasteCR |
+	text := editor clipboardText. 
+ pasteCR := [ 
+	  self cursorLineEnd: aKeyboardEvent. 
+	  editor paste . 
+	  ^ self normalMode ]. 
+
+	pasteLines := [ 
+			self cursorLineEnd: aKeyboardEvent. 
+    editor paste. 
+    self cursorLineBegin: aKeyboardEvent.
+  ]. 
+
+ paste :=  [ editor paste ].
+	
+"	empty"
+	text isEmpty 
+	  ifTrue: [ ^ self normalMode ]. 
+"cr"
+	text = String cr 
+	  ifTrue: pasteCR. 
+"lines/other"
+	text first = Character cr 
+	  ifTrue: pasteLines
+		 ifFalse: paste.
 	^ self normalMode.
