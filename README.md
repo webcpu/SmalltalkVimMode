@@ -1,3 +1,6 @@
+# Smalltalk Vim Mode
+Vim Mode for Playground, System Browser, Debugger in Pharo.
+
 # Install SmalltalkVimMode
 ## Prerequisites
 - Latest Pharo 6.1+ image.
