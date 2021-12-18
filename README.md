@@ -1,10 +1,11 @@
 # Smalltalk Vim Mode
-Vim Mode for Playground, System Browser, Debugger in Pharo.
+Vim Mode for Playground, System Browser, Debugger in Pharo. 
 
 # Install SmalltalkVimMode
 ## Prerequisites
-- Latest Pharo 6.1+ image.
-- Pharo VM for Pharo 6.1+.
+- Latest Pharo 6.1 image.
+- Pharo VM for Pharo 6.1.
+**(It doesn't work in the latest Pharo. I have tried to fix it, but my Smalltalk skill is rusty, I have no idea what went wrong.)**
 
 ## Execute the code in a Playground in Pharo
 ```
